@@ -256,7 +256,7 @@ body {
 }
 
 .js::before {
-    content: "JS%";
+    content: "JS";
 }
 
 .java::before {
