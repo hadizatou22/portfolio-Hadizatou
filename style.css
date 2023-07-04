@@ -38,24 +38,35 @@ body {
     min-height: 100vh;
     min-height: 100dvh;
     width: 100%;
-    flex-wrap: wrap;
+    flex-direction: column;
     position: relative;
+    padding: 2rem 10rem;
 
 }
-
+.flex1{
+    flex: 1;
+}
+.me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    text-align: center;
+}
 .profile-card {
     background: #111;
-    width: 400px;
+    width: 100%;
     padding: 2rem 3rem;
     border-radius: 20px;
     min-height: 400px;
-    position: relative;
+    top: 0;
     color: #fff;
     margin: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: column;
+    /* flex-direction: column; */
 }
 
 .profile-card .profile-pic {
@@ -84,6 +95,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 12px;
 }
 
 .profile-details .intro h2 {
@@ -97,6 +109,7 @@ body {
     border-radius: 4px;
     padding: 5px 10px;
     margin: 8px;
+    margin: 2rem 0;
 }
 
 .profile-details .intro .social {
@@ -190,12 +203,12 @@ body {
 .about {
     background-color: #111;
     max-width: 800px;
-    height: 95dvh;
+    /* height: 95dvh; */
     padding: 2rem 3rem;
     border-radius: 20px;
-    overflow-y: scroll;
+    /* overflow-y: scroll;
     scroll-snap-type: y mandatory;
-    overflow-y: scroll;
+    overflow-y: scroll; */
 }
 
 .about h2 {
@@ -337,6 +350,13 @@ body {
 
 /******** Responsive ********/
 @media(max-width:768px) {
+    .container{
+        padding: 2rem 2rem;
+    }
+    .profile-card{
+        flex-direction: column;
+        gap: 25px;
+    }
     .abou {
         width: 1005;
         max-width: 400px;
