@@ -49,7 +49,7 @@ body {
     padding: 2rem 3rem;
     border-radius: 20px;
     min-height: 400px;
-    position: fixed;
+    position: relative;
     color: #fff;
     margin: 15px;
     display: flex;
